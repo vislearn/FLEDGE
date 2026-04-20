@@ -14,7 +14,7 @@ Department of Computer Science, TU Darmstadt
 <strong>ICPR 2026</strong>
 
 <a href='https://vislearn.github.io/FLEDGE/'><img src='https://img.shields.io/badge/Project_Page-FLEDGE-green' alt='Project Page'></a>
-<a href="https://arxiv.org/abs/2510.11567"><img src='https://img.shields.io/badge/arXiv-PDF-red' alt='Paper PDF'></a> <a href="https://github.com/vislearn/FLEDGE"><img src='https://img.shields.io/badge/Github-Code-blue' alt='Github Code'></a> <img src='https://img.shields.io/badge/Dataset-Download-orange' alt='Github Code'></a>
+<a href="https://arxiv.org/abs/2510.11567"><img src='https://img.shields.io/badge/arXiv-PDF-red' alt='Paper PDF'></a> <a href="https://github.com/vislearn/FLEDGE"><img src='https://img.shields.io/badge/Github-Code-blue' alt='Github Code'></a> <a href="https://huggingface.co/datasets/dkalsan/FLEDGE"><img src='https://img.shields.io/badge/Dataset-Download-orange' alt='Dataset'></a>
 
 </div>
 
