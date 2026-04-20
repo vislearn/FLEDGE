@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A Framework for Low-Effort Training Data Generation for Urban Semantic Segmentation">
+  <meta name="keywords" content="training, data, generation, urban, semantic, segmentation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="A Framework for Low-Effort Training Data Generation for Urban Semantic Segmentation">
+  <meta name="twitter:creator" content="dkalsan">
+
+  <title>A Framework for Low-Effort Training Data Generation for Urban Semantic Segmentation</title>
+
+  <meta name="google-site-verification" content="TODO" />
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bulma.min.css">
+  <link rel="stylesheet" href="./css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./css/twentytwenty.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="./js/jquery.event.move.js"></script>
+  <script src="./js/jquery.twentytwenty.js"></script>
+  <script src="./js/bulma-carousel.min.js"></script>
+  <script src="./js/bulma-slider.min.js"></script>
+  <script src="./js/fontawesome.all.min.js"></script>
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">A Framework for Low-Effort Training Data Generation for Urban Semantic Segmentation</h1>
+          <h3 class="title has-text-centered">ICPR 2026</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Damjan Kalšan<sup>1,*</sup>,</span>
+            <span class="author-block">Denis Zavadski<sup>1,*</sup>,</span>
+            <span class="author-block">Tim Küchler<sup>1</sup>,</span>
+            <span class="author-block">Haebom Lee<sup>2</sup>,</span>
+            <span class="author-block">Stefan Roth<sup>3</sup>,</span>
+            <span class="author-block">Carsten Rother<sup>1</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors" style="display: flex; flex-direction: column;">
+            <span class="author-block"><sup>1</sup> Computer Vision and Learning Lab, IWR, Heidelberg University</span>
+            <span class="author-block"><sup>2</sup> AIMMO, Republic of Korea</span>
+            <span class="author-block"><sup>3</sup> Visual Inference Lab, Department of Computer Science, TU Darmstadt</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2510.11567" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf" style="color: orangered"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/vislearn/FLEDGE" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset link -->
+              <span class="link-block">
+                <a href="TODO" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+              <!-- Colab Link. -->
+              <!-- <span class="link-block">
+                <a href="https://colab.research.google.com/drive/xxx-u?usp=sharing" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <img src="images/colab.svg">
+                  </span>
+                  <span>&nbsp;Google Colab</span>
+                </a>
+              </span> -->
+              <!-- Hugging Face. -->
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/spaces/xxx" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      &#129303;
+                  </span>
+                  <span>Hugging Face Space</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" width="100%" src="./images/teaser.png" alt="Teaser image demonstrating the framework data generation capabilities"/>
+    </div>
+  </div>
+</section>
+
+
+<section class="section pt-0">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Synthetic datasets are widely used for training urban scene recognition models, but even highly realistic renderings show a noticeable gap to real imagery. This gap is particularly pronounced when adapting to a specific target domain, such as Cityscapes, where differences in architecture, vegetation, object appearance, and camera characteristics limit downstream performance. Closing this gap with more detailed 3D modelling would require expensive asset and scene design, defeating the purpose of low-cost labelled data. To address this, we present a new framework that adapts an off-the-shelf diffusion model to a target domain using only imperfect pseudo-labels. Once trained, it generates high-fidelity, target-aligned images from semantic maps of any synthetic dataset, including low-effort sources created in hours rather than months. The method filters suboptimal generations, rectifies image-label misalignments, and standardises semantics across datasets, transforming weak synthetic data into competitive real-domain training sets. Experiments on five synthetic datasets and two real target datasets show segmentation gains of up to +8.0%pt. mIoU over state-of-the-art translation methods, making rapidly constructed synthetic datasets as effective as high-effort, time-intensive synthetic datasets requiring extensive manual design. This work highlights a valuable collaborative paradigm where fast semantic prototyping, combined with generative models, enables scalable, high-quality training data creation for urban scene understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section pt-0" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre class="selectable"><code>@misc{kalsan2025fledge,
+      title={A Framework for Low-Effort Training Data Generation for Urban Semantic Segmentation}, 
+      author={Damjan Kalšan and Denis Zavadski and Tim Küchler and Haebom Lee and Stefan Roth and Carsten Rother},
+      year={2025},
+      eprint={2510.11567},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+}
+</code></pre>
+  </div>
+</section>
+
+<footer class="footer pt-4 pb-0">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template based on
+            <a href="https://github.com/nerfies/nerfies.github.io">
+              Nerfies
+            </a> and licensed under
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+              CC-BY-SA-4.0
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
